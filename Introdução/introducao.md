@@ -42,3 +42,79 @@ Alguns programadores acreditam que essa complexidade é melhor gerenciada usando
 
 Isso não é apenas chato, como é ineficiente. Novos problemas exigem novas soluções. As areas da programação são vastas, jovens e ainda estão no processo de evolução, e é variado o suficiente para ter abordagens diferentes. Existem muitos esrros terriveis de se cometer no design de programas, e voce deve ir em frente, comete-los e compreendelos. A noção de como pe um bom programa é delenvolvida na pratica, e não aprendida com uma lista de regras.
 
+### Proque a linguagem importa ?
+
+No inicio, quando não havima linguagens de programalção, programas eram basicamente algo assim:
+
+```
+00110001 00000000 00000000
+00110001 00000001 00000001
+00110011 00000001 00000010
+01010001 00001011 00000010
+00100010 00000010 00001000
+01000011 00000001 00000000
+01000001 00000001 00000001
+00010000 00000010 00000000
+01100010 00000000 00000000
+```
+
+Esse é um programa para adicionar numeros de 1 até 10 e colocar no terminal o resultado: 1 + 2 + ... + 10 = 55. Ele poderia ser executado em uma simples e hipotética máquina. Para programar os primeiros computadores, era necessário colocar grandes conjuntos de interruptores na posição correta, ou fazer furos em titras de papelão e alimentar o computador com aquilo. Voce provavelmente consegue imaginar o qunto esse trabalho era tedioso e sujeito a erros. Até mesmo escrever programas simples exigia uita experiencia e disciplina. O programas mais complexos eram quase impossiveis de serem feitos.
+
+É claro que inserir manualmente eses padrões misteriosos de bits (zeros e uns) deu ao programador uma profunda sensação de ser um grande mago poderoso. E ssi temq ue valer a pena em termos de satisfação no trabalho.
+
+Cada linha previamente programada ´continha uma unica instrução. Ela pode ser escrita dessa forma:
+```
+1. Armazene o numero 0 na posição da memoria numero 0
+2. Armazene o numero 1 na posição da memoria numero 1
+3. Armazene o valor da memoria da posição 1 , na posição de memória 2.
+4.Subtraia o numero 11 dao vavalor da memoria na posição 2
+5.Se o valor da memoria na posição 2 for 0 vá até a instrução 9
+6. Adicione o valor da memoria na posição 1 , para a posição 0
+7. Some 1 ao valor da memória na posição 1 e adicione.
+8.Va até a instrução 3
+9.Mostre o resultado armazenado na memória de posição 0
+```
+
+Embora agora as coisas pareçam um pouquinho masi claro que aquele monte de bits, as coisas ainda parecem um pouco obscuras. O uso de nomes , ao invez de numeros pode ajudar.
+
+```
+"total" vale 0
+"contador" vale 1
+[repita]
+"compare" tem valor de "contador"
+subtraia 11 de "compare"
+SE "compare" for 0, vá até [fim]
+adicione "count" em "total"
+adicione 1 em "count"
+Vá até [repita]
+[fim]
+mostre "total"
+```
+
+Voce consegue ver como esse programa funciona nesse ponto? A s duas primeiras linhas colocam na memória os valores iniciais: `total` será usando para construir o resoltado do calculo e `contador` manterá a contagem e mostrará para qual numero estamos olhando. As linhas que usam `compare` são provavelmente a mais extranhas. O programa quer ver se `count` é igual a 11 para decidir se para de funcionar ou não. Como nossa máquina hipotética é rmuito primitiva, ela só pode testar se o numero é zero e tomar uma decisão a partir disso. Então ela usa o espaço da memória, chamado de `compare`, para verificar o valor de `compare` - 11, e toma uma decisão em cima disso. As proximas 2 linhas adicionam o valor de `contador` em `total` e aumenta a contagem em 1 toda vez que o programa decidir que o `contador` ainda não é 11.
+
+Esse é o mesmo programa em JavaScript: 
+
+```js
+let total = 0, contador = 1;
+while (contador <= 10) {
+  total += contador;
+  contador += 1;
+}
+console.log(total);
+// → 55
+```
+
+A versão acima nos fornece mais algumas vantagens em relação a anterior. Mais importante: não há necessidade de especificar como quer3emos que o programa salte de um passo para outro. A construção do while já cuida disso. Ele continua executando o código entre colchetes (bloco de codigo) enquanto a condição dada, `contador <= 10` (`contador` menor ou igual a 10), for mantida. Não precisamos mais criar um valor temporário para compara-lo com 0, porque isso era apenas um detalhe desinteressnate. Parte do poder das linguagens de programação é cuidar de coisas chatas e desinteressantes.
+
+No final do programa, depois do fim do bloco do `while`, a operação `console.log` é usada para msotrar os resultados.
+
+Se hipoteticamente tivessemos algo que gerasse todos os numeros entre 2 numeros (tal como uma função `range`) e algo que somasse um conjunto de numero (tal como uma função `sum`), a aparencia do programa seria algo assim:
+
+```js
+console.log(sum(range(1, 10)));
+```
+
+A moral do problema é que mesmo um simples programa pode ser expresso de forma loga ou curta, legivel ou ilegivel. A primeira versão do programa era completamente obscura, enquanto a ultima é quase uma frase em inglês : mostre a soma dos numeros entre 1 e 10 (incluindo eles). Veremos mais a frente como implementar tais operações.
+
+Uma boa Linguagem de programação ajuda o programador, permitindo que ele mostre as alçoes que o computador deve executar em um alto nivel. Ela ajuda a omitir detalhes, fornece blocos de construção conveniente e até permite que voce defina seus proprios blocos.
