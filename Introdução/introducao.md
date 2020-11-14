@@ -1,4 +1,4 @@
-### Introdução
+## Introdução
 
 "Nós pensamos que criamos os sistemas para nossos propósitos. Nós acreditamos que estamos fazendo deles a nossa própria imagem...Mas os computadores não são como nós. Eles são apenas a projeção de uma pequena parte de nós mesmos: a parte que se dedica a lógica, ordem, regra e clareza."
 -  Ellen Ullman, Close to the Machine: Technophilia and its Discontents (Adaptado)
@@ -119,3 +119,21 @@ console.log(sum(range(1, 10)));
 A moral do problema é que mesmo um simples programa pode ser expresso de forma loga ou curta, legível ou ilegível. A primeira versão do programa era completamente obscura, enquanto a última é quase uma frase em inglês: mostre a soma dos números entre 1 e 10 (incluindo eles). Veremos mais a frente como implementar tais operações.
 
 Uma boa Linguagem de programação ajuda o programador, permitindo que ele mostre as ações que o computador deve executar em um alto nível. Ela ajuda a omitir detalhes, fornece blocos de construção conveniente e até permite que você defina seus próprios blocos.
+
+### O que é o JavaScript ?
+
+JavaScript foi uma linguagem criada em 1995 para criar programas para paginas web no navegador Netscape. A linguagem foi adotada pela maioria dos navegadores visuais. Ele fez com que as aplicações web modernas fossem possíveis: aplicações não qual era possível interagir diretamente sem precisar recarregar a pagina para cada simples ação. JavaScript também é usado em sites mais tradicionais para fornecer interatividade e inteligencia.
+ 
+É importante dizer que JavaScript não tem quase NADA a ver com a linguagem de programação Java. A similaridade do nome é inspirada em considerações de marketing. Quando o JavaScript foi introduzido no mercado, a Linguagem Java estava fortemente comercializada e com grande popularidade. Alguém pensou que fosse uma boa ideia tentar tirar proveito desse sucesso. Agora estamos presos ao nome.
+ 
+Após a adoção do JavaScript fora do Netscape, um documento padrão foi escrito para descrever como a linguagem JavaScript deveria funcionar, de forma que vários softwares que alegavam suportar JavaScript estivesse falado a verdade. Esse documento foi chamado de ECMAScript standard, em homenagem à organização internacional ECMA, que fez a padronização.Na prática, os nomes ECMAScript e JavaScript são sinônimos.
+ 
+Há quem diga coisas terríveis sobre o JavaScript. Muitas dessas coisas são verdade. Quando fui a escrever algo em JavaScript pela primeira vez, rapidamente passei a desprezá-lo. A linguagem aceitava quase tudo que eu digitava, mas interpretava de uma forma completamente diferente do que eu queria. Isso tinha muito a ver com o fato de que eu não ter, na época, ideia do que estava fazendo, é claro, mas há um problema real aqui: o JavaScript é ridiculamente liberal. A ideia por trás desse design era tornar a programação em JavaScript mais fácil para iniciantes. Na verdade, isso dificulta encontrar problemas em seus programas porque o sistema não mostrará para você.
+ 
+Essa flexibilidade também tem suas vantagens. Ela deixa espaço para muitas técnicas que são impossiveis em linguagens mais rígidas. Após aprender a lidar com a linguagem corretamente  e trabalhar com ela por um tempo, aprendi a gostar do JavaScript.
+ 
+Existem várias versões do JavaScript. ECMAScript 3 era a versão amplamente suportada na época da ascensão do JavaScript para o domínio, isso entre 2000 e 2010. Durante esse período, também existia um trabalho em andamento de uma versão 4. Completamente ambiciosa, que planejava uma série de melhorias radicais e extensões para a linguagem. Mudar uma linguagem amplamente usada acabou sendo politicamente difícil, e o trabalho na versão 4 foi abandonado em 2008, gerando assim uma versão 5 muito menos ambiciosa e com pequenas melhorias, que foi lançada em 2009. Apenas em 2015 foi lançado o ECMAScript 6, uma grande atualização com a implementação de algumas ideias planejadas na versão 4. Desde então temos novas atualizações todos os anos.
+ 
+O fato de a linguagem estar evoluindo com o tempo, significa que os navegadores, que rodam essa linguagem precisam estar constantemente atualizados. E se você estiver usando uma versão antiga de um navegador, pode ser que ele não ofereça suporte a todos os recursos. Os designers da linguagem possuem o cuidado de realizar e implementar mudanças sem quebrar aplicações já existentes. Nesse livro, vamos usar a versão do JavaScript lançada em 2017.
+ 
+Navegadores não são a única plataforma que usam JavaScript. Alguns bancos de dados como MongoDB e CouchDB usam JavaScript como linguagem de consulta. Muitas plataformas para desktop e servidores geram um grande ambiente para programação JavaScript fora do navegador, sendo o mais notável deles o Node.js.
