@@ -19,3 +19,26 @@ A algum tempo, interfaces baseadas em linguagens, como BASIC e propt DOS, nas de
 
 Esse livro vai tentar fazer com que voce se familiarizem com essa linguagem, para que voce possa fazer coisas uteis e divertidas com ela.
 
+### Na Programação
+
+Alem de introduzir o javascript, nesse livro vamos introduzir os principios básicos da programação. A programação em si não é dificil. As regras fundamentais são simples e faceis, mas os programas construidos com elas tendem a ser complexos e gerar suas proprias regras. Dessa forma voce vai estar construindo seu proprio labirinto, e as vezes pode se perder nele.
+
+Haverá momentos em que ler esse livro  vai ser terrivelmente frustrante. Se voce for novo em programação vai haver muito material para digerir. Será necessário criatividade e interdiciplinaridade para que entenda e faça conexões adicionais.
+
+Cabe a voce fazer o esforço necessário. Quando voce estiver se esforçando para seguir o livro, não se julgue, voce está bem e precisa ter isso em mente. Faça um apequena pausa, releia outra parte do material e certifique-se de entender os exemplos e exercicios. Aprender é um trabalho arduo, mas tudo que que aprende é seu , e tornará outros aprendizados mais faceis.
+
+"Quando a ação deixar de ser lucrativa, reúna informações; quando a informação se tornar inútil, durma". 
+- Ursula K. Le Guin, The Left Hand of Darkness
+
+Um programa é muitas coisas. É um pedaço de texto digitado por um programador, é a força motriz de um computador, são dados na memória do computador. Analogias que tentam comparar programas a objetos com o qual estamos acostumados a lidar tendem a falhar. Uma analogia superficialmente correta é que um programa é uma máquina: Muitas partes estãop envolvidas,e para tudo funcionar, temos que considerar as maneiras pelas quais as partes se conectam e contribuem para a operação como um todo.
+
+Um computador é uma máquina física que hospedas essas máquinas imaginárias. Os proprios computadores só podem fazer coisas simples. A razão pelo qual são uteis é porque fazem essas coisas simples em velocidades assustadoramente altas. Um programa pode combinar varias dessas ações simples para realizar procedimentos extremamente complexos e complicados.
+
+Um programa é uma construção do nosso pensamento. Não tem custo e nem peso, porem pode crescer facimente.
+
+Mas não importa o tamanho ou a complexidade do programa. Caso ele cresça desenfreadamente, vai acabar confundindo seu proprio criador. Manter os programas sob controle, para que não cresçam sem controle é um dos principais desafios dos programadores. Qaund um proframa funciona, é lindo, A ate da programação é a habilidade de controlar a complexidadde dos programas.
+
+Alguns programadores acreditam que essa complexidade é melhor gerenciada usando um conjunto de téquinacas conhecidas eem seus programas. Eles proporam regras estritas (as "melhores praticas") descrevendo as formas que os programas devem ter e fazendo com que els cuidadosamente permaneçam dentro de uma zona de segurança.
+
+Isso não é apenas chato, como é ineficiente. Novos problemas exigem novas soluções. As areas da programação são vastas, jovens e ainda estão no processo de evolução, e é variado o suficiente para ter abordagens diferentes. Existem muitos esrros terriveis de se cometer no design de programas, e voce deve ir em frente, comete-los e compreendelos. A noção de como pe um bom programa é delenvolvida na pratica, e não aprendida com uma lista de regras.
+
