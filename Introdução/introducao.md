@@ -21,26 +21,26 @@ Esse livro vai tentar fazer com que você se familiarizem com essa linguagem, pa
 
 ### Na Programação
 
-Alem de introduzir o javascript, nesse livro vamos introduzir os principios básicos da programação. A programação em si não é dificil. As regras fundamentais são simples e faceis, mas os programas construidos com elas tendem a ser complexos e gerar suas proprias regras. Dessa forma voce vai estar construindo seu proprio labirinto, e as vezes pode se perder nele.
+Além de introduzir o JavaScript, nesse livro vamos introduzir os princípios básicos da programação. A programação  não é difícil. As regras fundamentais são simples e fáceis, mas os programas construídos com elas tendem a ser complexos e gerar suas próprias regras. Dessa forma você vai estar construindo seu próprio labirinto, e as vezes pode se perder nele.
 
-Haverá momentos em que ler esse livro  vai ser terrivelmente frustrante. Se voce for novo em programação vai haver muito material para digerir. Será necessário criatividade e interdiciplinaridade para que entenda e faça conexões adicionais.
+Haverá momentos em que ler esse livro  vai ser terrivelmente frustrante. Se você for novo em programação vai haver muito material para digerir. Será necessária criatividade e interdisciplinaridade para que entenda e faça conexões adicionais.
 
-Cabe a voce fazer o esforço necessário. Quando voce estiver se esforçando para seguir o livro, não se julgue, voce está bem e precisa ter isso em mente. Faça um apequena pausa, releia outra parte do material e certifique-se de entender os exemplos e exercicios. Aprender é um trabalho arduo, mas tudo que que aprende é seu , e tornará outros aprendizados mais faceis.
+Cabe a você fazer o esforço necessário. Quando você estiver se esforçando para seguir o livro, não se julgue, você está bem e precisa ter isso em mente. Faça um apequena pausa, releia outra parte do material e certifique-se de entender os exemplos e exercícios. Aprender é um trabalho árduo, mas tudo que você aprende é seu, e tornará outros aprendizados mais fáceis.
 
 "Quando a ação deixar de ser lucrativa, reúna informações; quando a informação se tornar inútil, durma". 
 - Ursula K. Le Guin, The Left Hand of Darkness
 
-Um programa é muitas coisas. É um pedaço de texto digitado por um programador, é a força motriz de um computador, são dados na memória do computador. Analogias que tentam comparar programas a objetos com o qual estamos acostumados a lidar tendem a falhar. Uma analogia superficialmente correta é que um programa é uma máquina: Muitas partes estãop envolvidas,e para tudo funcionar, temos que considerar as maneiras pelas quais as partes se conectam e contribuem para a operação como um todo.
+Um programa é muitas coisas. É um pedaço de texto digitado por um programador, é a força motriz de um computador, são dados na memória do computador. Analogias que tentam comparar programas a objetos com o qual estamos acostumados a lidar tendem a falhar. Uma analogia superficialmente correta é que um programa é uma máquina: muitas partes estão envolvidas, e para tudo funcionar, temos que considerar as maneiras pelas quais as partes se conectam e contribuem para a operação na totalidade.
 
-Um computador é uma máquina física que hospedas essas máquinas imaginárias. Os proprios computadores só podem fazer coisas simples. A razão pelo qual são uteis é porque fazem essas coisas simples em velocidades assustadoramente altas. Um programa pode combinar varias dessas ações simples para realizar procedimentos extremamente complexos e complicados.
+Um computador é uma máquina física que hospedas essas máquinas imaginárias. Os próprios computadores só podem fazer coisas simples. A razão pelo qual são uteis é porque fazem essas coisas simples em velocidades assustadoramente altas. Um programa pode combinar varias dessas ações simples para realizar procedimentos extremamente complexos e complicados.
 
-Um programa é uma construção do nosso pensamento. Não tem custo e nem peso, porem pode crescer facimente.
+Um programa é uma construção do nosso pensamento. Não tem custo e nem peso, porem pode crescer facilmente.
 
-Mas não importa o tamanho ou a complexidade do programa. Caso ele cresça desenfreadamente, vai acabar confundindo seu proprio criador. Manter os programas sob controle, para que não cresçam sem controle é um dos principais desafios dos programadores. Qaund um proframa funciona, é lindo, A ate da programação é a habilidade de controlar a complexidadde dos programas.
+Mas não importa o tamanho ou a complexidade do programa. Caso ele cresça desenfreadamente, vai acabar confundindo seu próprio criador. Manter os programas sob controle, para que não cresçam sem controle é um dos principais desafios dos programadores. Quando um programa funciona, é lindo, A ate da programação é a habilidade de controlar a complexidade dos programas.
 
-Alguns programadores acreditam que essa complexidade é melhor gerenciada usando um conjunto de téquinacas conhecidas eem seus programas. Eles proporam regras estritas (as "melhores praticas") descrevendo as formas que os programas devem ter e fazendo com que els cuidadosamente permaneçam dentro de uma zona de segurança.
+Alguns programadores acreditam que essa complexidade é melhor gerenciada usando um conjunto de técnicas conhecidas em seus programas. Eles propuseram regras estritas (as "melhores praticas") descrevendo as formas que os programas devem ter e fazendo com que eles cuidadosamente permaneçam dentro de uma zona de segurança.
 
-Isso não é apenas chato, como é ineficiente. Novos problemas exigem novas soluções. As areas da programação são vastas, jovens e ainda estão no processo de evolução, e é variado o suficiente para ter abordagens diferentes. Existem muitos esrros terriveis de se cometer no design de programas, e voce deve ir em frente, comete-los e compreendelos. A noção de como pe um bom programa é delenvolvida na pratica, e não aprendida com uma lista de regras.
+Isso não é apenas chato, como é ineficiente. Novos problemas exigem novas soluções. As áreas da programação são vastas, jovens e ainda estão no processo de evolução, e é variado o suficiente para ter abordagens diferentes. Existem muitos erros terríveis de se cometer no design de programas, e você deve ir em frente, comete-los e compreendê-los. A noção de como um bom programa é desenvolvido na prática, e não aprendida com uma lista de regras.
 
 ### Proque a linguagem importa ?
 
