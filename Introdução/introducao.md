@@ -42,9 +42,9 @@ Alguns programadores acreditam que essa complexidade é melhor gerenciada usando
 
 Isso não é apenas chato, como é ineficiente. Novos problemas exigem novas soluções. As áreas da programação são vastas, jovens e ainda estão no processo de evolução, e é variado o suficiente para ter abordagens diferentes. Existem muitos erros terríveis de se cometer no design de programas, e você deve ir em frente, comete-los e compreendê-los. A noção de como um bom programa é desenvolvido na prática, e não aprendida com uma lista de regras.
 
-### Proque a linguagem importa ?
+### Porque a linguagem importa?
 
-No inicio, quando não havima linguagens de programalção, programas eram basicamente algo assim:
+No início, quando não haviam linguagens de programação, programas eram basicamente algo assim:
 
 ```
 00110001 00000000 00000000
@@ -58,24 +58,26 @@ No inicio, quando não havima linguagens de programalção, programas eram basic
 01100010 00000000 00000000
 ```
 
-Esse é um programa para adicionar numeros de 1 até 10 e colocar no terminal o resultado: 1 + 2 + ... + 10 = 55. Ele poderia ser executado em uma simples e hipotética máquina. Para programar os primeiros computadores, era necessário colocar grandes conjuntos de interruptores na posição correta, ou fazer furos em titras de papelão e alimentar o computador com aquilo. Voce provavelmente consegue imaginar o qunto esse trabalho era tedioso e sujeito a erros. Até mesmo escrever programas simples exigia uita experiencia e disciplina. O programas mais complexos eram quase impossiveis de serem feitos.
+Esse é um programa para adicionar números de 1 até 10 e colocar no terminal o resultado: 1 + 2 + ... + 10 = 55. Ele poderia ser executado em uma simples e hipotética máquina. Para programar os primeiros computadores, era necessário colocar grandes conjuntos de interruptores na posição correta, ou fazer furos em tiras de papelão e alimentar o computador com aquilo. Você provavelmente consegue imaginar o quanto esse trabalho era tedioso e sujeito a erros. Até mesmo escrever programas simples exigia muita experiencia e disciplina. Os programas mais complexos eram quase impossíveis de serem feitos.
 
-É claro que inserir manualmente eses padrões misteriosos de bits (zeros e uns) deu ao programador uma profunda sensação de ser um grande mago poderoso. E ssi temq ue valer a pena em termos de satisfação no trabalho.
+É claro que inserir manualmente esses padrões misteriosos de bits (zeros e uns) deu ao programador uma profunda sensação de ser um grande mago poderoso. E isso tem que valer a pena em termos de satisfação no trabalho.
 
-Cada linha previamente programada ´continha uma unica instrução. Ela pode ser escrita dessa forma:
+Cada linha previamente programada continha uma única instrução. Ela pode ser escrita dessa forma:
+
 ```
-1. Armazene o numero 0 na posição da memoria numero 0
-2. Armazene o numero 1 na posição da memoria numero 1
-3. Armazene o valor da memoria da posição 1 , na posição de memória 2.
-4.Subtraia o numero 11 dao vavalor da memoria na posição 2
-5.Se o valor da memoria na posição 2 for 0 vá até a instrução 9
-6. Adicione o valor da memoria na posição 1 , para a posição 0
+1. Armazene o número 0 na posição da memória numero 0.
+2. Armazene o número 1 na posição da memória numero 1.
+3. Armazene o valor da memória da posição 1, na posição de memória 2.
+4. Subtraia o número 11 do valor da memória na posição 2.
+5. Se o valor da memória na posição 2 for 0 vá até à instrução 9.
+6. Adicione o valor da memória na posição 1, para a posição 0.
 7. Some 1 ao valor da memória na posição 1 e adicione.
-8.Va até a instrução 3
-9.Mostre o resultado armazenado na memória de posição 0
+8. Vá até a instrução 3.
+9. Mostre o resultado armazenado na memória de posição 0.
+
 ```
 
-Embora agora as coisas pareçam um pouquinho masi claro que aquele monte de bits, as coisas ainda parecem um pouco obscuras. O uso de nomes , ao invez de numeros pode ajudar.
+Embora agora as coisas pareçam um pouquinho mais claras que aquele monte de bits, as coisas ainda são um pouco obscuras. O uso de nomes, ao invés de números pode ajudar.
 
 ```
 "total" vale 0
@@ -84,14 +86,13 @@ Embora agora as coisas pareçam um pouquinho masi claro que aquele monte de bits
 "compare" tem valor de "contador"
 subtraia 11 de "compare"
 SE "compare" for 0, vá até [fim]
-adicione "count" em "total"
-adicione 1 em "count"
+adicione "contador" em "total"
+adicione 1 em "contador"
 Vá até [repita]
 [fim]
 mostre "total"
 ```
-
-Voce consegue ver como esse programa funciona nesse ponto? A s duas primeiras linhas colocam na memória os valores iniciais: `total` será usando para construir o resoltado do calculo e `contador` manterá a contagem e mostrará para qual numero estamos olhando. As linhas que usam `compare` são provavelmente a mais extranhas. O programa quer ver se `count` é igual a 11 para decidir se para de funcionar ou não. Como nossa máquina hipotética é rmuito primitiva, ela só pode testar se o numero é zero e tomar uma decisão a partir disso. Então ela usa o espaço da memória, chamado de `compare`, para verificar o valor de `compare` - 11, e toma uma decisão em cima disso. As proximas 2 linhas adicionam o valor de `contador` em `total` e aumenta a contagem em 1 toda vez que o programa decidir que o `contador` ainda não é 11.
+Você consegue ver como esse programa funciona nesse ponto? As duas primeiras linhas colocam na memória os valores iniciais: `total` será usando para construir o resultado do cálculo e `contador` manterá a contagem e mostrará para qual numero estamos olhando. As linhas que usam `compare` são provavelmente a mais estranhas. O programa quer ver se `count` é igual a 11 para decidir se para de funcionar ou não. Como nossa máquina hipotética é muito primitiva, ela só pode testar se o número é zero e decidir a partir disso. Então ela usa o espaço da memória, chamado de `compare`, para verificar o valor de `compare` - 11, e decide em cima disso. As próximas 2 linhas adicionam o valor de `contador` em `total` e aumenta a contagem em 1 toda vez que o programa decidir que o `contador` ainda não é 11.
 
 Esse é o mesmo programa em JavaScript: 
 
@@ -105,16 +106,16 @@ console.log(total);
 // → 55
 ```
 
-A versão acima nos fornece mais algumas vantagens em relação a anterior. Mais importante: não há necessidade de especificar como quer3emos que o programa salte de um passo para outro. A construção do while já cuida disso. Ele continua executando o código entre colchetes (bloco de codigo) enquanto a condição dada, `contador <= 10` (`contador` menor ou igual a 10), for mantida. Não precisamos mais criar um valor temporário para compara-lo com 0, porque isso era apenas um detalhe desinteressnate. Parte do poder das linguagens de programação é cuidar de coisas chatas e desinteressantes.
+A versão acima nos fornece mais algumas vantagens em relação a anterior. Mais importante: não há necessidade de especificar como queremos que o programa salte de um passo para outro. A construção do while já cuida disso. Ele continua executando o código entre colchetes (bloco de código) enquanto a condição dada, `contador <= 10` (`contador` menor ou igual a 10), for mantida. Não precisamos mais criar um valor temporário para compara-lo com 0, porque isso era apenas um detalhe desinteressante. Parte do poder das linguagens de programação é cuidar de coisas chatas e desinteressantes.
 
-No final do programa, depois do fim do bloco do `while`, a operação `console.log` é usada para msotrar os resultados.
+No final do programa, depois do fim do bloco do `while`, a operação `console.log` é usada para mostrar os resultados.
 
-Se hipoteticamente tivessemos algo que gerasse todos os numeros entre 2 numeros (tal como uma função `range`) e algo que somasse um conjunto de numero (tal como uma função `sum`), a aparencia do programa seria algo assim:
+Se hipoteticamente tivéssemos algo que gerasse todos os números entre 2 numeros (tal como uma função `range`) e algo que somasse um conjunto de número (tal como uma função `sum`), a aparência do programa seria algo assim:
 
 ```js
 console.log(sum(range(1, 10)));
 ```
 
-A moral do problema é que mesmo um simples programa pode ser expresso de forma loga ou curta, legivel ou ilegivel. A primeira versão do programa era completamente obscura, enquanto a ultima é quase uma frase em inglês : mostre a soma dos numeros entre 1 e 10 (incluindo eles). Veremos mais a frente como implementar tais operações.
+A moral do problema é que mesmo um simples programa pode ser expresso de forma loga ou curta, legível ou ilegível. A primeira versão do programa era completamente obscura, enquanto a última é quase uma frase em inglês: mostre a soma dos números entre 1 e 10 (incluindo eles). Veremos mais a frente como implementar tais operações.
 
-Uma boa Linguagem de programação ajuda o programador, permitindo que ele mostre as alçoes que o computador deve executar em um alto nivel. Ela ajuda a omitir detalhes, fornece blocos de construção conveniente e até permite que voce defina seus proprios blocos.
+Uma boa Linguagem de programação ajuda o programador, permitindo que ele mostre as ações que o computador deve executar em um alto nível. Ela ajuda a omitir detalhes, fornece blocos de construção conveniente e até permite que você defina seus próprios blocos.
