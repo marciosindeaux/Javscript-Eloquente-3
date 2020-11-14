@@ -3,7 +3,7 @@
 "Nós pensamos qure criamos os sistemas para nossos propositos. Nós acreditamos que estamos fazendo deles a nossa propria imagem...Mas os computadores não são como nós. Eles são apenas a projeção de uma pequena parte de nós mesmos: a parte que se dedica a lógica, ordem, regra e clareza."
 -  Ellen Ullman, Close to the Machine: Technophilia and its Discontents (Adaptado)
 
-![](./statics/chapter_picture00.jpg)
+![](https://github.com/marciosindeaux/Javscript-Eloquente-3/blob/introducao/Introdu%C3%A7%C3%A3o/statics/chapter_picture_00.jpg?raw=true)
 
 Este livro é sobre passar instruções para um computador. Computadores são tão comuns quanto ferramentas hoje em dia, mas eles são um pouco masi complexos e fazer eles executarem as tarefas que voce quer nem sempre é facil.
 
