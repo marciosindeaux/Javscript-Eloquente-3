@@ -60,3 +60,27 @@ Para números muito grandes ou muito pequenos no JavaScript, você pode usar na 
 Isso seria a mesma coisa que 2.998x10<sup>8</sup> = 299800000
  
 Cálculos com números inteiros menores que os 9 quatrilhões mencionados acima são sempre precisos. Infelizmente, cálculos com números reais não são assim. Assim como π (pi) não pode ser expresso com precisão por um número finito de dígitos decimais, muitos números perdem alguma precisão quando apenas 64 bits estão disponíveis para armazená-los. Isso é uma pena, mas causa problemas práticos apenas em situações específicas. O importante é estar ciente disso e tratar os números digitais fracionários como aproximações, não como valores precisos.
+
+## Arintimética
+
+A principal coisa que voce pode fazer com numeros é realizar operações arintiméticas com eles. Operações como adição e multiplicação de 2 Numeros para gerar um terceiro. Voce pode fazer em JavaScript mais ou menos assim:
+
+```js
+100 + 4 * 11
+```
+
+Os simbolos + e * são chamados de operadores. O primeiro significa adição e o simbolo logo em seguida significa multiplicação. Coloque um operador entre 2 valores e voce produzirá um terceiro.
+
+Mas no exemplo acima, voce sabe se a multiplicação ocorre primeiro ? Ou será que a soma ocorre primeiro ? Como voce deve ter suspeitado, a multiplicação ocorre primeiro, mas como na matemática, voce pode mudar a ordem das coisas adicionando parenteses.
+
+```js
+(100 + 4) * 11
+```
+
+Para subtração o operador usado é -, e para divisão , o usado é /.
+
+Quando muitos operadores aparecem juntos sem parenteses, a ordem de precedencia que são aplcadas as operações é determinada pela precedencia dos operadores. O operador / e o * tem a mesma ordem de precedencia. Logo abaixo, os operadores + e - possuem também a mesma ordem de precedencia , porem possuem menos ordem que mjultiplicação e divisão. Como foi mostrado, a multiplicação vam antes da soma. Quando varios operadores da mesma ordem de precedencia aprecem juntos uns dos outros como em 1 -2 + 1, eles são aplicados da esquerda para a direita: (1 - 2) + 1.
+
+Mas as regras de precedencia não são algo no qual voce deveria se preocupar. Em caso de duvidas, adicione parenteses.
+
+Existe mais um operador aritimético, que voce não reconhecerá imediatamente. O simbolo de % é usado para indicar "resto da divisão" de um numero em relação ao outro. Por exemplo 312%100 = 12. A precedencia do operador de modulo é a mesma que a divisão e a multiplicação. Voce verá frequentemente esse operador.
