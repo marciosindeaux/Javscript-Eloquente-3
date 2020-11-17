@@ -126,7 +126,7 @@ JavaScript foi uma linguagem criada em 1995 para criar programas para paginas we
  
 É importante dizer que JavaScript não tem quase NADA a ver com a linguagem de programação Java. A similaridade do nome é inspirada em considerações de marketing. Quando o JavaScript foi introduzido no mercado, a Linguagem Java estava fortemente comercializada e com grande popularidade. Alguém pensou que fosse uma boa ideia tentar tirar proveito desse sucesso. Agora estamos presos ao nome.
  
-Após a adoção do JavaScript fora do Netscape, um documento padrão foi escrito para descrever como a linguagem JavaScript deveria funcionar, de forma que vários softwares que alegavam suportar JavaScript estivesse falado a verdade. Esse documento foi chamado de ECMAScript standard, em homenagem à organização internacional ECMA, que fez a padronização.Na prática, os nomes ECMAScript e JavaScript são sinônimos.
+Após a adoção do JavaScript fora do Netscape, um documento padrão foi escrito para descrever como a linguagem JavaScript deveria funcionar, de forma que vários softwares que alegavam suportar JavaScript estivesse falado a verdade. Esse documento foi chamado de ECMAScript standard, em homenagem à organização internacional ECMA, que fez a padronização. Na prática, os nomes ECMAScript e JavaScript são sinônimos.
  
 Há quem diga coisas terríveis sobre o JavaScript. Muitas dessas coisas são verdade. Quando fui a escrever algo em JavaScript pela primeira vez, rapidamente passei a desprezá-lo. A linguagem aceitava quase tudo que eu digitava, mas interpretava de uma forma completamente diferente do que eu queria. Isso tinha muito a ver com o fato de que eu não ter, na época, ideia do que estava fazendo, é claro, mas há um problema real aqui: o JavaScript é ridiculamente liberal. A ideia por trás desse design era tornar a programação em JavaScript mais fácil para iniciantes. Na verdade, isso dificulta encontrar problemas em seus programas porque o sistema não mostrará para você.
  
@@ -137,3 +137,49 @@ Existem várias versões do JavaScript. ECMAScript 3 era a versão amplamente su
 O fato de a linguagem estar evoluindo com o tempo, significa que os navegadores, que rodam essa linguagem precisam estar constantemente atualizados. E se você estiver usando uma versão antiga de um navegador, pode ser que ele não ofereça suporte a todos os recursos. Os designers da linguagem possuem o cuidado de realizar e implementar mudanças sem quebrar aplicações já existentes. Nesse livro, vamos usar a versão do JavaScript lançada em 2017.
  
 Navegadores não são a única plataforma que usam JavaScript. Alguns bancos de dados como MongoDB e CouchDB usam JavaScript como linguagem de consulta. Muitas plataformas para desktop e servidores geram um grande ambiente para programação JavaScript fora do navegador, sendo o mais notável deles o Node.js.
+
+### Codigo, e o que fazer com ele
+
+Código é o texto que compõe os programas. A maioria dos capítulos desse livro contém uma grande quantidade de código. Eu acredito que ler e escrever código são partes indispensáveis ao aprendizado da programação. Tente apenas não olhar os exemplos, leia eles atentamente e entenda eles. Isso pode parecer lento e confuso inicialmente, mas eu prometo que rapidamente você vai pegar isso. A mesma coisa vale para os exercícios. Não assuma que você entende os exercícios até que tenha realmente escrito a solução.
+ 
+Eu recomendo que você execute suas soluções em um interpretador JavaScript mais atual. Dessa forma, você receberá um feedback imediato sobre se o que está fazendo está funcionando e, espero, você ficará tentado a experimentar e ir além dos exercícios.
+ 
+Se você estiver lendo esse livro no seu navegador, poderá editar e rodar todos os exemplos dos programas apenas clicando neles.
+ 
+Se você deseja rodar alguns desses programas fora do site desse livro, alguns cuidados são necessários. Muitos exemplos são independentes e devem funcionar normalmente em qualquer ambiente JavaScript. Mas o código nos capítulos posteriores geralmente é escrito para um ambiente específico (o navegador ou Node.js) e só pode ser executado lá. Além disso, muitos capítulos definem programas maiores, e as partes do código que aparecem neles dependem uma das outras ou de arquivos externos. A [sandbox](https://eloquentjavascript.net/code/)  do site do livro fornece arquivos Zip contendo scripts e aquivos de dados necessários para executar o código de um determinado capítulo.
+
+### Visão geral do livro
+Esse livro é dividido em 3 partes: os primeiros 12 capítulos (que abordam a linguagem JavaScript), os 7 capítulos seguintes (que abordam sobre navegadoras web) e os 2 últimos capítulos (que são dedicados a Node.js e outros ambientes de desenvolvimento JavaScript).
+ 
+Ao decorrer desse livro, existem 5 capítulos de projeto, que descrevem programas maiores para lhe dar uma ideia do que é programar de verdade. Nós trabalharemos com um [robô de entregas](), uma [linguagem de programação](), um [jogo de plataforma](), um [programa de pintura em pixels]() e um [website dinâmico]().
+ 
+Da parte do livro que aborda a linguagem JavaScript, os quatro primeiros capítulos vão introduzir estruturas básicas na linguagem. Estruturas de [controle]() (como a palavra while que você viu acima), [funções]() e [estruturas de dados]()  serão abordados. Depois deles, você já vai estar apto a escrever programas básicos. Nos capítulos [5]() e [6]() serão introduzidas técnicas para uso de funções e objetos para escrever códigos mais abstratos e manter as complexidades sobre controle.
+ 
+Depois disso, virá o [primeiro capitulo e desafio](). Após, a explicação sobre a linguagem continuará, com capítulos de [tratamento de erros e correções de bugs](), [expressões regulares]() (uma importante ferramenta para trabalhar com erro), [modularidade]() (outro mecanismo de defesa contra complexidade) e [programação assíncrona]() (para lidar com eventos que demandam mais tempo). Por fim, surgirá o [segundo capitulo de desafio](), concluindo assim a primeira parte do livro.
+ 
+Na segunda parte, do capítulo [13]() ao [19]() descreve as ferramentas que o JavaScript do navegador tem acesso. Você vai aprender a mostrar coisas em tela (Capítulos [14]() e [19]()), responder aos inputs do usuário ([Capitulo 15]()), e se comunicar usando a internet ([Capitulo 18]()). Existem novamente 2 capítulos de projeto nessa parte.
+ 
+Depois disso, na terceira parte, será descrito no [Capitulo 20]() a ferramenta Node.js, e no [Capitulo 21]() será construído um pequeno website com a ferramenta. 
+
+### Tipografia e convenções
+
+Nesse livro, textos escritos com uma fonte `monoespaçadas` representam elementos de um programa. Algumas vezes esses elementos representam fragmentos de um programa e outras vezes representam um programa completo. Os programas (dos quais você já viu alguns) são escritos da seguinte forma:
+
+```js
+function factorial(n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return factorial(n - 1) * n;
+  }
+}
+```
+
+Para mostrar a saída esperada de um programa, usaremos a notação `// -> `. Apos esse simbolo vira a saída esperada.
+
+```js
+console.log(2*5)
+// -> 10
+```
+
+Boa Sorte!
