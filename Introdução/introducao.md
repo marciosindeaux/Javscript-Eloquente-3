@@ -1,7 +1,7 @@
-## Introdução
+# Introdução
 
-"Nós pensamos que criamos os sistemas para nossos propósitos. Nós acreditamos que estamos fazendo deles a nossa própria imagem...Mas os computadores não são como nós. Eles são apenas a projeção de uma pequena parte de nós mesmos: a parte que se dedica a lógica, ordem, regra e clareza."
--  Ellen Ullman, Close to the Machine: Technophilia and its Discontents (Adaptado)
+> "Nós pensamos que criamos os sistemas para nossos propósitos. Nós acreditamos que estamos fazendo deles a nossa própria imagem...Mas os computadores não são como nós. Eles são apenas a projeção de uma pequena parte de nós mesmos: a parte que se dedica a lógica, ordem, regra e clareza."
+> -  Ellen Ullman, Close to the Machine: Technophilia and its Discontents (Adaptado)
 
 ![](https://github.com/marciosindeaux/Javscript-Eloquente-3/blob/introducao/Introdu%C3%A7%C3%A3o/statics/chapter_picture_00.jpg?raw=true)
 
@@ -19,7 +19,7 @@ A algum tempo, interfaces baseadas em linguagens, como BASIC e prompt DOS, nas d
 
 Esse livro vai tentar fazer com que você se familiarizem com essa linguagem, para que possa fazer coisas uteis e divertidas com ela.
 
-### Na Programação
+## Na Programação
 
 Além de introduzir o JavaScript, nesse livro vamos introduzir os princípios básicos da programação. A programação  não é difícil. As regras fundamentais são simples e fáceis, mas os programas construídos com elas tendem a ser complexos e gerar suas próprias regras. Dessa forma você vai estar construindo seu próprio labirinto, e as vezes pode se perder nele.
 
@@ -27,8 +27,8 @@ Haverá momentos em que ler esse livro  vai ser terrivelmente frustrante. Se voc
 
 Cabe a você fazer o esforço necessário. Quando você estiver se esforçando para seguir o livro, não se julgue, você está bem e precisa ter isso em mente. Faça um apequena pausa, releia outra parte do material e certifique-se de entender os exemplos e exercícios. Aprender é um trabalho árduo, mas tudo que você aprende é seu, e tornará outros aprendizados mais fáceis.
 
-"Quando a ação deixar de ser lucrativa, reúna informações; quando a informação se tornar inútil, durma". 
-- Ursula K. Le Guin, The Left Hand of Darkness
+> Quando a ação deixar de ser lucrativa, reúna informações; quando a informação se tornar inútil, durma". 
+> - Ursula K. Le Guin, The Left Hand of Darkness
 
 Um programa é muitas coisas. É um pedaço de texto digitado por um programador, é a força motriz de um computador, são dados na memória do computador. Analogias que tentam comparar programas a objetos com o qual estamos acostumados a lidar tendem a falhar. Uma analogia superficialmente correta é que um programa é uma máquina: muitas partes estão envolvidas, e para tudo funcionar, temos que considerar as maneiras pelas quais as partes se conectam e contribuem para a operação na totalidade.
 
@@ -42,7 +42,7 @@ Alguns programadores acreditam que essa complexidade é melhor gerenciada usando
 
 Isso não é apenas chato, como é ineficiente. Novos problemas exigem novas soluções. As áreas da programação são vastas, jovens e ainda estão no processo de evolução, e é variado o suficiente para ter abordagens diferentes. Existem muitos erros terríveis de se cometer no design de programas, e você deve ir em frente, comete-los e compreendê-los. A noção de como um bom programa é desenvolvido na prática, e não aprendida com uma lista de regras.
 
-### Porque a linguagem importa?
+## Porque a linguagem importa?
 
 No início, quando não haviam linguagens de programação, programas eram basicamente algo assim:
 
@@ -120,7 +120,7 @@ A moral do problema é que mesmo um simples programa pode ser expresso de forma 
 
 Uma boa Linguagem de programação ajuda o programador, permitindo que ele mostre as ações que o computador deve executar em um alto nível. Ela ajuda a omitir detalhes, fornece blocos de construção conveniente e até permite que você defina seus próprios blocos.
 
-### O que é o JavaScript ?
+## O que é o JavaScript ?
 
 JavaScript foi uma linguagem criada em 1995 para criar programas para paginas web no navegador Netscape. A linguagem foi adotada pela maioria dos navegadores visuais. Ele fez com que as aplicações web modernas fossem possíveis: aplicações não qual era possível interagir diretamente sem precisar recarregar a pagina para cada simples ação. JavaScript também é usado em sites mais tradicionais para fornecer interatividade e inteligencia.
  
@@ -138,7 +138,7 @@ O fato de a linguagem estar evoluindo com o tempo, significa que os navegadores,
  
 Navegadores não são a única plataforma que usam JavaScript. Alguns bancos de dados como MongoDB e CouchDB usam JavaScript como linguagem de consulta. Muitas plataformas para desktop e servidores geram um grande ambiente para programação JavaScript fora do navegador, sendo o mais notável deles o Node.js.
 
-### Codigo, e o que fazer com ele
+## Codigo, e o que fazer com ele
 
 Código é o texto que compõe os programas. A maioria dos capítulos desse livro contém uma grande quantidade de código. Eu acredito que ler e escrever código são partes indispensáveis ao aprendizado da programação. Tente apenas não olhar os exemplos, leia eles atentamente e entenda eles. Isso pode parecer lento e confuso inicialmente, mas eu prometo que rapidamente você vai pegar isso. A mesma coisa vale para os exercícios. Não assuma que você entende os exercícios até que tenha realmente escrito a solução.
  
@@ -148,7 +148,7 @@ Se você estiver lendo esse livro no seu navegador, poderá editar e rodar todos
  
 Se você deseja rodar alguns desses programas fora do site desse livro, alguns cuidados são necessários. Muitos exemplos são independentes e devem funcionar normalmente em qualquer ambiente JavaScript. Mas o código nos capítulos posteriores geralmente é escrito para um ambiente específico (o navegador ou Node.js) e só pode ser executado lá. Além disso, muitos capítulos definem programas maiores, e as partes do código que aparecem neles dependem uma das outras ou de arquivos externos. A [sandbox](https://eloquentjavascript.net/code/)  do site do livro fornece arquivos Zip contendo scripts e aquivos de dados necessários para executar o código de um determinado capítulo.
 
-### Visão geral do livro
+## Visão geral do livro
 Esse livro é dividido em 3 partes: os primeiros 12 capítulos (que abordam a linguagem JavaScript), os 7 capítulos seguintes (que abordam sobre navegadoras web) e os 2 últimos capítulos (que são dedicados a Node.js e outros ambientes de desenvolvimento JavaScript).
  
 Ao decorrer desse livro, existem 5 capítulos de projeto, que descrevem programas maiores para lhe dar uma ideia do que é programar de verdade. Nós trabalharemos com um [robô de entregas](), uma [linguagem de programação](), um [jogo de plataforma](), um [programa de pintura em pixels]() e um [website dinâmico]().
@@ -161,7 +161,7 @@ Na segunda parte, do capítulo [13]() ao [19]() descreve as ferramentas que o Ja
  
 Depois disso, na terceira parte, será descrito no [Capitulo 20]() a ferramenta Node.js, e no [Capitulo 21]() será construído um pequeno website com a ferramenta. 
 
-### Tipografia e convenções
+## Tipografia e convenções
 
 Nesse livro, textos escritos com uma fonte `monoespaçadas` representam elementos de um programa. Algumas vezes esses elementos representam fragmentos de um programa e outras vezes representam um programa completo. Os programas (dos quais você já viu alguns) são escritos da seguinte forma:
 
